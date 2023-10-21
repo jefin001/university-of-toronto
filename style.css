@@ -312,7 +312,7 @@ img {
   color: #f44336;
   font-size: 9px;
 }
-/* call section */
+/* contact section */
 
 #call-to-action {
   margin: 100px auto;
@@ -326,7 +326,8 @@ img {
   padding: 100px 0;
 }
 #call-to-action h2 {
-  color: #fff;
+  font-size: 35px;
+  color: #a7180e;
   margin-bottom: 40px;
   padding: 0;
   letter-spacing: 2px;
@@ -361,6 +362,10 @@ img {
   font-weight: 600;
   font-size: 35px;
   color: #a7180e;
+}
+#footer .footer-p {
+  width: 75%;
+  margin: 0 auto;
 }
 #footer p {
   padding-bottom: 10px;
@@ -570,7 +575,9 @@ img {
     display: none;
   }
 }
+
 /* facilities responsive */
+
 @media all and (max-width: 990px) {
   #facilities .row {
     flex-direction: column;
@@ -591,5 +598,22 @@ img {
 @media all and (max-width: 960px) {
   #testimonials .row {
     flex-direction: column;
+  }
+}
+
+/* contact responsive */
+
+@media all and (max-width: 750px) {
+  #call-to-action h2 {
+    font-size: 30px;
+  }
+}
+
+/* footer responsive */
+
+@media all and (max-width: 560px) {
+  #footer .footer-p {
+    width: 75%;
+    margin: 0 auto;
   }
 }
