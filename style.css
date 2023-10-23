@@ -387,7 +387,7 @@ img {
   font-size: 15px;
 }
 
-/* about page  */
+/* about page header section */
 /* sub header section */
 
 #sub-header {
@@ -410,6 +410,14 @@ img {
   padding: 10px 20px;
   justify-content: space-between;
   align-items: center;
+}
+#sub-header nav button {
+  padding: 10px;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: none;
 }
 img {
   width: 100%;
@@ -471,9 +479,12 @@ img {
 .about-sec-2 {
   width: 50%;
 }
-#about-us .about-sec-2 img {
+#about-us .about-sec-2 {
   width: 100%;
-  border-radius: 60px;
+}
+
+#about-us .about-sec-2 img {
+  border-radius: 20px;
 }
 #about-us .about-sec h2 {
   padding-top: 0;
@@ -612,6 +623,53 @@ img {
 /* footer responsive */
 
 @media all and (max-width: 560px) {
+  #footer .footer-p {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* about us section */
+/* about page header section */
+
+@media all and (max-width: 700px) {
+  #sub-header .right {
+    position: relative;
+  }
+  #sub-header nav .right ul {
+    display: none;
+  }
+  #sub-header nav .right:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 51px;
+    top: 21px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  #sub-header nav button {
+    display: inline-block;
+  }
+  #sub-header .text-box h1 {
+    font-size: 33px;
+  }
+  #sub-header .text-box p {
+    font-size: 12px;
+  }
+}
+
+/* about us content responsive */
+
+@media all and (max-width: 1140px) {
+  #about-us .row {
+    flex-direction: column;
+  }
+}
+
+/* about page footer section */
+
+@media all and (max-width: 645px) {
   #footer .footer-p {
     width: 75%;
     margin: 0 auto;
